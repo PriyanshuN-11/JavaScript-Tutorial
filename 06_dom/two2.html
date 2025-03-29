@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM chai aur code</title>
+    <style>
+        body{ 
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading"> DOM learning with priyanshu <span style="display: none;"> hello</span> </h1>
+       <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+       <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>Lorem, ipsum dolor.</p>
+        <ul>
+            <li class="listClass">one</li>
+            <li class="listClass">two</li>
+            <li class="listClass">three</li>
+            <li class="listClass">four</li>
+        </ul>
+</body>
+<script>
+    document.getElementsByClassName('again') //gives html collection
+
+    document.querySelector("h1")
+    document.querySelector(".heading")
+    document.querySelector("#title")
+
+    document.querySelector("li").style.color = "red"
+    //or
+    let myul = document.querySelector("ul")
+    let myl = myul.querySelector("li")
+    myl.style.color ="yellow"
+
+    myl.innerText
+    myl.innerText ="priyanshu"
+
+    let h = document.querySelectorAll("h2")
+    h[2].style.color ="blue"
+
+    h.forEach(function (hTwo){
+        hTwo.style.color = "blue"
+    })
+
+    let myClassL = document.getElementsByClassName("listClass")
+    let arr = Array.from(myClassL)
+
+    arr.forEach(function(li){
+        li.style.color = "wheat"
+    })
+    
+ </script>
+</html>
