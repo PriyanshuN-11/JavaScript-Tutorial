@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 class="heading" id="title">DOM Learning with Priyanshu Negi</h1>
+       <h2>Lorem ipsum dolor sit amet.</h2>
+       <h2>Lorem ipsum dolor sit amet.</h2>
+       <h2>Lorem ipsum dolor sit amet.</h2>
+       <h2>Lorem ipsum dolor sit amet.</h2>
+       <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+        <ul>
+            <li class="sun">one</li>
+            <li class="sun">two</li>
+            <li class="sun">three</li>
+        </ul>
+</body>
+<script>
+    console.log(window)
+    console.log(window.document)
+    console.log(document)
+    console.dir(document)
+    console.log(document.links)
+    console.log(document.links[1])
+    console.log(document.baseURI)
+
+
+    document.getElementById("title")
+    document.getElementById("title").innerHTML = "hello"
+</script>
+</html>
